@@ -14,7 +14,7 @@
         android:layout_marginBottom="68dp"
         android:background="@drawable/button_rounded"
         android:backgroundTint="@color/colorBoton"
-        android:text="Transacciones"
+        android:text="Transacciones Compra/Venta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnCerrarSesion"
         app:layout_constraintHorizontal_bias="0.168"

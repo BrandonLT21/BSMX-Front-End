@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtCorreoElectronico"
+        android:layout_width="368dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="268dp"
+        android:ems="10"
+        android:hint="Correo Electronico"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="372dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreoElectronico" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Iniciar Sesion "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="279dp"
+        android:layout_height="236dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorreoElectronico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_bsmx" />
+
+    <Button
+        android:id="@+id/showPasswordButton"
+        android:layout_width="88dp"
+        android:layout_height="56dp"
+        android:background="@android:color/transparent"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toTopOf="@+id/txtPassword" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintStart_toStartOf="@+id/showPasswordButton"
+        app:layout_constraintTop_toTopOf="@+id/txtPassword"
+        app:srcCompat="@android:drawable/ic_menu_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

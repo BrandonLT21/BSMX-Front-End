@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuTransaccionesActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Cantidad en Solidarios:"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="289dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingresa la cantidad a pagar"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:context=".MenuTransaccionesActivity"/>
+
+
+    <EditText
+        android:id="@+id/txtCorreoT"
+        android:layout_width="289dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Ingresa tu email "
+        android:inputType="text"
+        android:textSize="15sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:context=".MenuTransaccionesActivity" />
+
+    <ImageView
+        android:id="@+id/imvCodigo"
+        android:layout_width="235dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="212dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad"
+        app:srcCompat="@drawable/transacciones" />
+
+    <Button
+        android:id="@+id/btnEscanear"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="147dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Escanear QR"
+        app:layout_constraintEnd_toStartOf="@+id/btnGenerar"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad" />
+
+    <Button
+        android:id="@+id/btnGenerar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="146dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Generar QR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidad" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

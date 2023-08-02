@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Datos de Empresa"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="334dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtUtilidades"
+        android:layout_width="345dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Utilidades"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPercepcionMensual" />
+
+    <EditText
+        android:id="@+id/txtPercepcionMensual"
+        android:layout_width="344dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Percepcion mensual"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGastos" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="333dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Correo electronico"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtGastos"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Gastos"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRfc" />
+
+    <EditText
+        android:id="@+id/txtRfc"
+        android:layout_width="345dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="RFC "
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAntiguedad" />
+
+    <EditText
+        android:id="@+id/txtAntiguedad"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Antiguedad"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGiro" />
+
+    <EditText
+        android:id="@+id/txtGiro"
+        android:layout_width="340dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Giro comercial"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rdbProducto"
+        android:layout_width="165dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:buttonTint="@color/radio_button_selector"
+        android:text="Producto"
+        app:layout_constraintEnd_toStartOf="@+id/rdbServicio"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUtilidades" />
+
+    <RadioButton
+        android:id="@+id/rdbServicio"
+        android:layout_width="149dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:buttonTint="@color/radio_button_selector"
+        android:text="Servicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUtilidades" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="93dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/empresamejor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

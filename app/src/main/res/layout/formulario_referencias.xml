@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioReferenciasActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Datos de Referencias Personales"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="334dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Nombre de referencia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="339dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Telefono de referencia"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtNombre2"
+        android:layout_width="334dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Nombre de referencia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+
+    <EditText
+        android:id="@+id/txtTelefono2"
+        android:layout_width="339dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Telefono de referencia"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre2" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Guardar Datos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="149dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/referencia_mejor" />
+
+    <TextView
+        android:id="@+id/txtReferencia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Referencia personal 1:"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtReferencia12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Referencia personal 2:"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

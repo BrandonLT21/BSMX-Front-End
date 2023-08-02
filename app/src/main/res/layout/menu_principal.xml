@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipalActivity">
+
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Registrar Datos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRequisitos"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbEmpresa"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <Button
+        android:id="@+id/btnRequisitos"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Subir Requisitos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbPersona" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Cerrar Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbPersona"
+        app:layout_constraintVertical_bias="0.864" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:text="Tipo de Beneficiario:"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rbEmpresa"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="364dp"
+        android:buttonTint="@color/radio_button_selector"
+        android:text="Empresa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rbPersona"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rbPersona"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="364dp"
+        android:text="Persona"
+        android:buttonTint="@color/radio_button_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="83dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRequisitos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbPersona"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/documento_bsmx" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="83dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="118dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rbEmpresa"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/datos_usuario" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="199dp"
+        android:layout_height="161dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_bsmx" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

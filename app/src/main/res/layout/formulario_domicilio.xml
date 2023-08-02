@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos de Domicilio"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="111dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/domicilio" />
+
+    <EditText
+        android:id="@+id/txtEstado"
+        android:layout_width="323dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Estado"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMunicipio" />
+
+    <EditText
+        android:id="@+id/txtCodigoPostal"
+        android:layout_width="328dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Codigo postal"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumInterior" />
+
+    <EditText
+        android:id="@+id/txtNumInterior"
+        android:layout_width="330dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Numero interior"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumExterior" />
+
+    <EditText
+        android:id="@+id/txtMunicipio"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Municipio"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/txtNumExterior"
+        android:layout_width="336dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Numero exterior"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtColonia" />
+
+    <EditText
+        android:id="@+id/txtColonia"
+        android:layout_width="344dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Colonia "
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalle" />
+
+    <EditText
+        android:id="@+id/txtCalle"
+        android:layout_width="330dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Calle"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLocalidad" />
+
+    <EditText
+        android:id="@+id/txtLocalidad"
+        android:layout_width="322dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="Localidad"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEstado" />
+
+    <Button
+        android:id="@+id/btnGuardarDatos"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoPostal"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoPostal"
+        app:layout_constraintVertical_bias="0.509" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

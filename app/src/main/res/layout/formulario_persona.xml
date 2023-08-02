@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioPersonaActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos Personales"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="137dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/datos_usuario" />
+
+    <EditText
+        android:id="@+id/txtPaterno"
+        android:layout_width="329dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Apellido Paterno"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtOcupacion"
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Ocupacion"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPMensual" />
+
+    <EditText
+        android:id="@+id/txtPMensual"
+        android:layout_width="331dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Percepcion mensual"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMaterno" />
+
+    <EditText
+        android:id="@+id/txtMaterno"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Apellido Materno"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPaterno" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="327dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <EditText
+        android:id="@+id/txtRFC"
+        android:layout_width="327dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="RFC (Opcional)"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCurp" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="326dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Correo Electronico "
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOcupacion" />
+
+    <EditText
+        android:id="@+id/txtCurp"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="CURP"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="336dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCurp"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorBoton"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCurp"
+        app:layout_constraintVertical_bias="0.847" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

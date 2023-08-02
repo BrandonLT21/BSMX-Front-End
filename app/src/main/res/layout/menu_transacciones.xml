@@ -37,12 +37,12 @@
 
 
     <EditText
-        android:id="@+id/txtCorreoT"
+        android:id="@+id/txtDescripcion"
         android:layout_width="289dp"
         android:layout_height="67dp"
         android:layout_marginTop="88dp"
         android:ems="10"
-        android:hint="Ingresa tu email "
+        android:hint="Ingresa una descripcion del articulo "
         android:inputType="text"
         android:textSize="15sp"
         android:typeface="sans"

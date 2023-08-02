@@ -21,7 +21,7 @@ class MenuTransaccionesActivity : AppCompatActivity()  {
     private lateinit var btnCancelar: Button
     private lateinit var imvCodigo: ImageView
     private lateinit var txtCantidad: EditText
-    private lateinit var txtCorreoT: EditText
+    private lateinit var txtDescripcion: EditText
 
     override fun onBackPressed() {
         val builder = AlertDialog.Builder(this)
@@ -48,7 +48,7 @@ class MenuTransaccionesActivity : AppCompatActivity()  {
         btnCancelar = findViewById(R.id.btnCancelar)
         imvCodigo = findViewById(R.id.imvCodigo)
         txtCantidad = findViewById(R.id.txtCantidad)
-        txtCorreoT = findViewById(R.id.txtCorreoT)
+        txtDescripcion = findViewById(R.id.txtDescripcion)
 
 
 
@@ -62,7 +62,7 @@ class MenuTransaccionesActivity : AppCompatActivity()  {
         btnGenerar.setOnClickListener{
 
             val cantidad = txtCantidad.text.toString()
-            val correo = txtCorreoT.text.toString()
+            val correo = txtDescripcion.text.toString()
             val cantidad2 = txtCantidad.text.toString().toFloatOrNull()
             val lineaDeCredito = LineaDeCredito()
 
@@ -76,7 +76,7 @@ class MenuTransaccionesActivity : AppCompatActivity()  {
                 try {
                     var barcodeEncoder: BarcodeEncoder = BarcodeEncoder()
                     var bitmap: Bitmap = barcodeEncoder.encodeBitmap(
-                        txtCantidad.text.toString() + " solidarios. De: " + txtCorreoT.text.toString(),
+                        txtCantidad.text.toString() + " solidarios. Producto: " + txtDescripcion.text.toString(),
                         BarcodeFormat.QR_CODE,
                         250,
                         250
